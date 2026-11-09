@@ -9,7 +9,7 @@ export function ClientCard({ client }: { client: Client }) {
     <Link href={routes.client(client.id)} className="block h-full">
       <Card className="flex h-full flex-col hover:border-sage">
         <div className="flex items-start justify-between gap-3">
-          <h2 className="font-serif text-2xl text-ink">{client.name}</h2>
+          <h2 className="font-sans tracking-tight text-2xl text-ink">{client.name}</h2>
           <Badge tone="ink">{client.since}</Badge>
         </div>
         <p className="mt-3 flex-1 text-sm leading-6 text-ink-soft">{client.focus}</p>

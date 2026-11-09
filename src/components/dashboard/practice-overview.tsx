@@ -36,7 +36,7 @@ export function PracticeOverview() {
       />
       <StatGrid />
       <section className="mt-10">
-        <h2 className="font-serif text-2xl text-ink">Recent movement</h2>
+        <h2 className="font-sans tracking-tight text-2xl text-ink">Recent movement</h2>
         <p className="mt-1 text-sm text-ink-soft">
           A fixed sample of the week. Live activity arrives with the database.
         </p>

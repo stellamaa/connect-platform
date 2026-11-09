@@ -51,7 +51,7 @@ export function SignInForm() {
               <label
                 key={role}
                 className={cn(
-                  "cursor-pointer rounded-2xl border px-4 py-3",
+                  "cursor-pointer rounded-md border px-4 py-3",
                   choice === role ? "border-moss bg-sage-soft" : "border-line",
                 )}
               >

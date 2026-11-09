@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Mark } from "@/components/brand/mark";
 import { brand } from "@/constants/brand";
 import { routes } from "@/constants/routes";
 import { cn } from "@/lib/cn";
@@ -15,12 +14,11 @@ export function Wordmark({
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center gap-2.5 font-serif text-xl tracking-tight",
-        tone === "ink" ? "text-ink" : "text-paper",
+        "font-sans text-lg tracking-tight lowercase",
+        tone === "ink" ? "text-ink" : "text-cream",
       )}
     >
-      <Mark />
-      <span>{brand.name}</span>
+      {brand.name}
     </Link>
   );
 }

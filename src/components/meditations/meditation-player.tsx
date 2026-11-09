@@ -24,15 +24,15 @@ export function MeditationPlayer({ meditation }: { meditation: Meditation }) {
       <p className="text-xs tracking-[0.16em] text-sage uppercase">
         {formatMinutes(meditation.durationMinutes)} · Listen
       </p>
-      <h1 className="mt-3 font-serif text-4xl tracking-tight text-ink md:text-5xl">
+      <h1 className="mt-3 font-sans tracking-tight text-4xl tracking-tight text-ink md:text-5xl">
         {meditation.title}
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">{meditation.intention}</p>
-      <div className="mt-8 max-w-xl rounded-[2rem] border border-line bg-moss-deep p-6 text-paper">
+      <div className="mt-8 max-w-xl rounded-md border border-line bg-moss-deep p-6 text-paper">
         <p className="text-sm text-paper/70">
           Timer for the intended length. Audio is not attached in this build.
         </p>
-        <p className="mt-6 font-serif text-5xl tabular-nums">
+        <p className="mt-6 font-sans tracking-tight text-5xl tabular-nums">
           {formatClock(player.seconds)}
           <span className="ml-2 text-2xl text-paper/50">
             / {formatClock(player.durationSeconds)}
@@ -76,7 +76,7 @@ export function MeditationPlayer({ meditation }: { meditation: Meditation }) {
         ) : null}
       </div>
       <div className="mt-10 max-w-2xl space-y-4">
-        <h2 className="font-serif text-2xl text-ink">Guidance</h2>
+        <h2 className="font-sans tracking-tight text-2xl text-ink">Guidance</h2>
         {meditation.guidance.map((paragraph) => (
           <p key={paragraph} className="leading-7 text-ink-soft">
             {paragraph}

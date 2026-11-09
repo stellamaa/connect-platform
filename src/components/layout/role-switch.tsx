@@ -9,8 +9,8 @@ export function RoleSwitch() {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="text-xs tracking-[0.14em] text-ink-soft uppercase">View</span>
-      <div className="flex rounded-full bg-sage-soft p-1" role="group" aria-label="Switch view">
+      <span className="text-xs text-ink-soft lowercase">view</span>
+      <div className="flex border border-line" role="group" aria-label="Switch view">
         {roleOrder.map((item) => {
           const active = role === item;
           return (
@@ -20,8 +20,8 @@ export function RoleSwitch() {
               aria-pressed={active}
               onClick={() => setRole(item)}
               className={cn(
-                "rounded-full px-3 py-1.5 text-sm",
-                active ? "bg-moss text-paper" : "text-moss",
+                "px-3 py-1.5 text-sm lowercase",
+                active ? "bg-ink text-cream" : "text-ink",
               )}
             >
               {roles[item].label}

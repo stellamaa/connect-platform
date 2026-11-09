@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #f4efe6;
-  --paper-raised: #fbf8f3;
-  --ink: #1c2421;
-  --ink-soft: #4d5a55;
-  --moss: #1f3a32;
-  --moss-deep: #142822;
-  --sage: #5d8a72;
-  --sage-soft: #d7e6dc;
-  --clay: #b8613f;
-  --clay-soft: #f3ddd3;
-  --line: #e3dacd;
-  --gold: #c6a15b;
+  --paper: #f7f4ef;
+  --paper-raised: #fffcf8;
+  --ink: #161616;
+  --ink-soft: #5c564e;
+  --stone: #8c8478;
+  --cream: #f3efe6;
+  --moss: #161616;
+  --moss-deep: #101010;
+  --sage: #8c8478;
+  --sage-soft: #efeae2;
+  --clay: #161616;
+  --clay-soft: #f3efe6;
+  --line: #e4dfd6;
+  --gold: #f6f1e6;
 }
 
 @theme inline {
@@ -20,6 +22,8 @@
   --color-paper-raised: var(--paper-raised);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
+  --color-stone: var(--stone);
+  --color-cream: var(--cream);
   --color-moss: var(--moss);
   --color-moss-deep: var(--moss-deep);
   --color-sage: var(--sage);
@@ -28,7 +32,7 @@
   --color-clay-soft: var(--clay-soft);
   --color-line: var(--line);
   --color-gold: var(--gold);
-  --font-sans: var(--font-outfit);
+  --font-sans: var(--font-geist);
   --font-serif: var(--font-fraunces);
 }
 
@@ -38,6 +42,12 @@ body {
 }
 
 ::selection {
-  background: #d7e6dc;
-  color: #1c2421;
+  background: #e4dece;
+  color: #161616;
+}
+
+@utility italic-serif {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  font-weight: 450;
 }

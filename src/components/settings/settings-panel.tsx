@@ -21,7 +21,7 @@ export function SettingsPanel() {
       <dl className="grid max-w-xl gap-5">
         <div>
           <dt className="text-xs tracking-wide text-ink-soft uppercase">Signed-in preview</dt>
-          <dd className="mt-1 font-serif text-2xl text-ink">{name}</dd>
+          <dd className="mt-1 font-sans tracking-tight text-2xl text-ink">{name}</dd>
         </div>
         <div>
           <dt className="text-xs tracking-wide text-ink-soft uppercase">View</dt>

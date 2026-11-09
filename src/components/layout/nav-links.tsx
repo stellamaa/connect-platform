@@ -24,8 +24,8 @@ function Item({
         href={item.href}
         aria-current={active ? "page" : undefined}
         className={cn(
-          "shrink-0 rounded-full px-3 py-1.5 text-sm",
-          active ? "bg-white/15 text-paper" : "text-paper/70 hover:text-paper",
+          "shrink-0 px-3 py-1.5 text-sm lowercase",
+          active ? "text-cream underline decoration-cream/70 underline-offset-4" : "text-cream/65 hover:text-cream",
         )}
       >
         {item.label}
@@ -38,12 +38,12 @@ function Item({
       href={item.href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "block rounded-2xl px-3 py-2",
-        active ? "bg-white/10 text-paper" : "text-paper/75 hover:bg-white/5 hover:text-paper",
+        "block px-3 py-2 lowercase",
+        active ? "text-cream" : "text-cream/65 hover:text-cream",
       )}
     >
       <span className="block text-sm">{item.label}</span>
-      <span className="block text-xs text-paper/50">{item.note}</span>
+      <span className="block text-xs text-cream/45">{item.note}</span>
     </Link>
   );
 }

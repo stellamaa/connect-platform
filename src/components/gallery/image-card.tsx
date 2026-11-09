@@ -12,17 +12,17 @@ export function ImageCard({ image }: { image: GalleryImage }) {
   return (
     <Link href={routes.image(image.slug)} className="group block">
       <div
-        className="flex aspect-[4/5] flex-col justify-between rounded-[1.6rem] p-4"
+        className="flex aspect-[4/5] flex-col justify-between rounded-md p-4"
         style={{ background: image.wash }}
       >
         <div
-          className="min-h-0 flex-1 rounded-[1.2rem]"
+          className="min-h-0 flex-1 rounded-md"
           style={{
             background: `linear-gradient(165deg, ${image.wash}, ${image.field})`,
           }}
         />
         <div className="pt-4">
-          <h2 className="font-serif text-2xl text-ink">{image.title}</h2>
+          <h2 className="font-sans tracking-tight text-2xl text-ink">{image.title}</h2>
           <p className="mt-1 text-sm text-ink/70">{image.summary}</p>
         </div>
       </div>

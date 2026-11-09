@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces, Outfit } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
 import { brand } from "@/constants/brand";
 import "./globals.css";
 
-const outfit = Outfit({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-paper font-sans text-ink">{children}</body>
     </html>

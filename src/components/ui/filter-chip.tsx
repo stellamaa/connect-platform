@@ -15,8 +15,8 @@ export function FilterChip({
       onClick={onClick}
       aria-pressed={active}
       className={cn(
-        "rounded-full px-3 py-1.5 text-sm capitalize transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay",
-        active ? "bg-moss text-paper" : "bg-sage-soft text-moss hover:bg-sage/20",
+        "rounded-md px-3 py-1.5 text-sm lowercase transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
+        active ? "bg-ink text-cream" : "text-ink hover:bg-sage-soft",
       )}
     >
       {children}

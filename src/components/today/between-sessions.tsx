@@ -35,7 +35,7 @@ export function BetweenSessions() {
     <>
       <header className="mb-8 border-b border-line pb-6">
         <p className="text-xs tracking-[0.16em] text-sage uppercase">Between sessions</p>
-        <h1 className="mt-2 font-serif text-4xl tracking-tight text-ink md:text-5xl">
+        <h1 className="mt-2 font-sans tracking-tight text-4xl tracking-tight text-ink md:text-5xl">
           {name.split(" ")[0]}, the tray is here.
         </h1>
         <p className="mt-3 max-w-2xl text-ink-soft">
@@ -45,10 +45,10 @@ export function BetweenSessions() {
       {next ? (
         <Link
           href={routes.meditation(next.slug)}
-          className="block rounded-[1.8rem] bg-moss-deep p-6 text-paper md:p-8"
+          className="block rounded-md bg-moss-deep p-6 text-paper md:p-8"
         >
           <p className="text-sm text-gold">Start here</p>
-          <p className="mt-3 font-serif text-3xl">{next.title}</p>
+          <p className="mt-3 font-sans tracking-tight text-3xl">{next.title}</p>
           <p className="mt-2 text-paper/75">
             {formatMinutes(next.durationMinutes)} · {next.intention}
           </p>
@@ -90,7 +90,7 @@ function TrayColumn({
 }) {
   return (
     <section>
-      <h2 className="font-serif text-2xl text-ink">{title}</h2>
+      <h2 className="font-sans tracking-tight text-2xl text-ink">{title}</h2>
       <ul className="mt-3 space-y-2">
         {items.map((item) => (
           <li key={item.href}>

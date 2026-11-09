@@ -21,7 +21,7 @@ export function MeditationCard({ meditation }: { meditation: Meditation }) {
             {formatMinutes(meditation.durationMinutes)}
           </span>
         </div>
-        <h2 className="mt-4 font-serif text-2xl text-ink">{meditation.title}</h2>
+        <h2 className="mt-4 font-sans tracking-tight text-2xl text-ink">{meditation.title}</h2>
         <p className="mt-2 flex-1 text-sm leading-6 text-ink-soft">{meditation.summary}</p>
         <p className="mt-4 text-sm text-moss">{meditation.intention}</p>
         {role === "practitioner" ? (

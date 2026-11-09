@@ -63,7 +63,7 @@ export function ClientRecord({ clientId }: { clientId: string }) {
   return (
     <article>
       <p className="text-xs tracking-[0.16em] text-sage uppercase">Client</p>
-      <h1 className="mt-3 font-serif text-4xl tracking-tight text-ink md:text-5xl">
+      <h1 className="mt-3 font-sans tracking-tight text-4xl tracking-tight text-ink md:text-5xl">
         {client.name}
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">{client.focus}</p>
@@ -86,7 +86,7 @@ export function ClientRecord({ clientId }: { clientId: string }) {
           const items = materials[group.key];
           return (
             <section key={group.key}>
-              <h2 className="font-serif text-2xl text-ink">{group.label}</h2>
+              <h2 className="font-sans tracking-tight text-2xl text-ink">{group.label}</h2>
               {items.length === 0 ? (
                 <p className="mt-2 text-sm text-ink-soft">Nothing assigned here yet.</p>
               ) : (

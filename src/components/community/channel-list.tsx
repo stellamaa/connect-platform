@@ -23,7 +23,7 @@ export function ChannelList({
               onClick={() => onSelect(channel.id)}
               aria-pressed={active}
               className={cn(
-                "w-full rounded-2xl px-4 py-3 text-left",
+                "w-full rounded-md px-4 py-3 text-left",
                 active ? "bg-moss text-paper" : "bg-paper-raised text-ink hover:border-sage",
               )}
             >

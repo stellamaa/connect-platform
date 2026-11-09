@@ -52,7 +52,7 @@ export function SignUpForm() {
               <label
                 key={role}
                 className={cn(
-                  "cursor-pointer rounded-2xl border px-3 py-3 text-sm",
+                  "cursor-pointer rounded-md border px-3 py-3 text-sm",
                   choice === role ? "border-moss bg-sage-soft text-moss" : "border-line text-ink",
                 )}
               >

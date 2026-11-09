@@ -9,8 +9,8 @@ export default function PlatformError({
   reset: () => void;
 }) {
   return (
-    <div className="rounded-3xl border border-line bg-paper-raised px-6 py-12">
-      <h1 className="font-serif text-3xl text-ink">This page did not open.</h1>
+    <div className="rounded-md border border-line bg-paper-raised px-6 py-12">
+      <h1 className="font-sans tracking-tight text-3xl text-ink">This page did not open.</h1>
       <p className="mt-3 max-w-md text-sm leading-6 text-ink-soft">
         The rest of the practice is still there. Try this page again.
       </p>

@@ -11,10 +11,10 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-2.5 py-1 text-xs tracking-wide",
-        tone === "sage" && "bg-sage-soft text-moss",
-        tone === "clay" && "bg-clay-soft text-clay",
-        tone === "ink" && "bg-ink/5 text-ink-soft",
+        "inline-flex items-center text-xs lowercase underline decoration-1 underline-offset-4",
+        tone === "sage" && "text-ink",
+        tone === "clay" && "text-ink",
+        tone === "ink" && "text-ink-soft",
       )}
     >
       {children}

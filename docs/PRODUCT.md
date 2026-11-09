@@ -43,7 +43,7 @@ Mara’s overview lists the size of the library and a fixed week of movement. Th
 
 ## Tone
 
-The interface is a practice room, not a dashboard product. Paper, moss, and a serif for titles. Copy speaks the way Mara would leave a note: specific, short, and without a claim that the exercise will fix the week.
+The interface follows an editorial marketplace: a stone field, black type, a cream page, and a black footer. Titles are a plain grotesque. An italic serif is only for asides. Copy speaks the way Mara would leave a note: specific, short, and without a claim that the exercise will fix the week.
 
 ## Out of scope for the product, not only this build
 

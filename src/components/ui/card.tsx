@@ -9,12 +9,7 @@ export function Card({
   className?: string;
 }) {
   return (
-    <div
-      className={cn(
-        "rounded-3xl border border-line bg-paper-raised p-5",
-        className,
-      )}
-    >
+    <div className={cn("rounded-md border border-line bg-paper-raised p-5", className)}>
       {children}
     </div>
   );

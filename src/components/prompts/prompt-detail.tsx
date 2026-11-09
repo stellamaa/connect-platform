@@ -20,14 +20,14 @@ export function PromptDetail({ prompt }: { prompt: WritingPrompt }) {
     <article className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
       <div>
         <p className="text-xs tracking-[0.16em] text-clay uppercase">Write</p>
-        <h1 className="mt-3 font-serif text-4xl tracking-tight text-ink md:text-5xl">
+        <h1 className="mt-3 font-sans tracking-tight text-4xl tracking-tight text-ink md:text-5xl">
           {prompt.title}
         </h1>
         <p className="mt-4 text-lg leading-8 text-ink-soft">{prompt.invitation}</p>
         <ol className="mt-8 space-y-4">
           {prompt.questions.map((question, index) => (
             <li key={question} className="flex gap-4">
-              <span className="font-serif text-2xl text-sage">0{index + 1}</span>
+              <span className="font-sans tracking-tight text-2xl text-sage">0{index + 1}</span>
               <p className="pt-1 leading-7 text-ink">{question}</p>
             </li>
           ))}
@@ -43,7 +43,7 @@ export function PromptDetail({ prompt }: { prompt: WritingPrompt }) {
           onChange={(event) => update(event.target.value)}
           rows={14}
           placeholder="Begin in the middle if you need to."
-          className="mt-2 w-full rounded-[1.5rem] border border-line bg-paper-raised px-4 py-4 leading-7 text-ink outline-none focus:border-sage"
+          className="mt-2 w-full rounded-md border border-line bg-paper-raised px-4 py-4 leading-7 text-ink outline-none focus:border-sage"
         />
         <div className="mt-3 flex items-center justify-between gap-3">
           <p className="text-xs text-ink-soft" role="status">

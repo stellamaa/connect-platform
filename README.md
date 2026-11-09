@@ -1,6 +1,6 @@
 # Connect
 
-Connect is a workspace for wellness practitioners. It holds the materials a client needs on the days between sessions: guided meditations, writing prompts, learning notes, images, and a small circle chat.
+Connect is a Next.js and Tailwind application for wellness practitioners. After a session, a practitioner leaves materials for the people they already work with: guided meditations, writing prompts, learning notes, images, and a small circle chat. A client opens one tray and finds what was left for the days in between.
 
 The sample studio in this repository is **Stillroom Practice** in Bristol, led by Mara Ellison. Three clients — Jonah Adeyemi, Priya Shah, and Luis Ortega — already have materials in their trays. You can walk the product as Mara or as Jonah without creating an account.
 

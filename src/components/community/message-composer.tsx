@@ -25,7 +25,7 @@ export function MessageComposer({
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder="A short note for this channel"
-        className="w-full rounded-full border border-line bg-paper px-4 py-3 text-sm outline-none focus:border-sage"
+        className="w-full rounded-md border border-line bg-paper px-4 py-3 text-sm outline-none focus:border-sage"
       />
       <Button type="submit" disabled={value.trim().length === 0}>
         Send

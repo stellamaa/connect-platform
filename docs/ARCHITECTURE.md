@@ -66,9 +66,9 @@ Do that on the server. Pass the results into Client Components as props, the way
 
 ## Styling
 
-Colour and type are CSS variables in `src/app/globals.css`, mapped into Tailwind with `@theme`. Headlines use Fraunces. Interface text uses Outfit. Both load through `next/font` on the root layout.
+Colour and type are CSS variables in `src/app/globals.css`, mapped into Tailwind with `@theme`. The page is cream. The marketing hero is stone. The practice rail and the closing band are black. Headlines use Geist. Fraunces appears only through the `italic-serif` utility, for short asides.
 
-There is one light theme. The navigation rail is dark moss so the practice shell has a room, not a second theme. Automatic dark mode is off: a wellness practice should not flip palette with the operating system in this foundation.
+There is one theme. Automatic dark mode is off.
 
 ## Files that must not be committed later
 

@@ -1,30 +1,42 @@
 import Link from "next/link";
 import { Wordmark } from "@/components/brand/wordmark";
 import { routes } from "@/constants/routes";
+import { cn } from "@/lib/cn";
 
-export function SiteHeader() {
+export function SiteHeader({ tone = "ink" }: { tone?: "ink" | "cream" }) {
+  const onStone = tone === "cream";
+
   return (
     <header className="flex items-center justify-between gap-4 px-6 py-5 md:px-10 lg:px-16">
-      <Wordmark />
-      <nav className="flex shrink-0 items-center gap-1.5 text-sm md:gap-5">
+      <Wordmark tone={onStone ? "paper" : "ink"} />
+      <nav className="flex shrink-0 items-center gap-3 text-sm lowercase md:gap-6">
         <Link
           href={routes.about}
-          className="hidden whitespace-nowrap text-ink-soft hover:text-ink sm:inline"
+          className={cn(
+            "hidden whitespace-nowrap sm:inline",
+            onStone ? "text-cream/80 hover:text-cream" : "text-ink-soft hover:text-ink",
+          )}
         >
-          About this build
+          about
         </Link>
         <Link
           href={routes.signIn}
-          className="whitespace-nowrap px-2 py-2 text-ink hover:text-moss md:px-3"
+          className={cn(
+            "whitespace-nowrap",
+            onStone ? "text-cream/80 hover:text-cream" : "text-ink hover:text-ink-soft",
+          )}
         >
-          Sign in
+          sign in
         </Link>
         <Link
           href={routes.signUp}
-          className="whitespace-nowrap rounded-full bg-moss px-3 py-2 text-paper hover:bg-moss-deep md:px-4"
+          className={cn(
+            "whitespace-nowrap rounded-md px-3 py-2",
+            onStone ? "bg-cream text-ink hover:bg-white" : "bg-ink text-cream hover:bg-black",
+          )}
         >
-          <span className="sm:hidden">Enter</span>
-          <span className="hidden sm:inline">Enter the practice</span>
+          <span className="sm:hidden">enter</span>
+          <span className="hidden sm:inline">enter the practice</span>
         </Link>
       </nav>
     </header>

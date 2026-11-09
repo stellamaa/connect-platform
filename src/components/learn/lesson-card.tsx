@@ -19,7 +19,7 @@ export function LessonCard({ lesson }: { lesson: Lesson }) {
           <Badge>Read</Badge>
           <span className="text-sm text-ink-soft">{formatMinutes(lesson.readingMinutes)}</span>
         </div>
-        <h2 className="mt-4 font-serif text-2xl text-ink">{lesson.title}</h2>
+        <h2 className="mt-4 font-sans tracking-tight text-2xl text-ink">{lesson.title}</h2>
         <p className="mt-2 flex-1 text-sm leading-6 text-ink-soft">{lesson.summary}</p>
         {role === "practitioner" ? <AssignmentNames ids={lesson.assignedClientIds} /> : null}
       </Card>

@@ -13,11 +13,11 @@ export function AuthPanel({
 }) {
   return (
     <main id="main" className="grid min-h-dvh md:grid-cols-2">
-      <section className="flex flex-col justify-between bg-moss-deep px-8 py-8 text-paper md:px-12">
+      <section className="flex flex-col justify-between bg-stone px-8 py-8 text-cream md:px-12">
         <Wordmark tone="paper" />
         <div className="py-16">
-          <p className="text-sm text-gold">{brand.tagline}</p>
-          <p className="mt-4 max-w-sm font-serif text-4xl leading-tight">
+          <p className="italic-serif text-2xl">{brand.tagline}</p>
+          <p className="mt-4 max-w-sm font-sans text-4xl leading-tight tracking-tight">
             Leave the room with something to return to.
           </p>
         </div>
@@ -25,7 +25,7 @@ export function AuthPanel({
       </section>
       <section className="flex items-center px-6 py-12 md:px-12">
         <div className="w-full max-w-md">
-          <h1 className="font-serif text-4xl tracking-tight text-ink">{title}</h1>
+          <h1 className="font-sans text-4xl tracking-tight text-ink">{title}</h1>
           <p className="mt-3 text-sm leading-6 text-ink-soft">{lede}</p>
           <div className="mt-8">{children}</div>
         </div>

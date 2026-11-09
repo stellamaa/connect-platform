@@ -6,10 +6,10 @@ import { practitioner } from "@/constants/people";
 
 export function Sidebar() {
   return (
-    <aside className="sticky top-0 hidden h-dvh flex-col overflow-y-auto bg-moss-deep px-4 py-5 text-paper md:flex">
+    <aside className="sticky top-0 hidden h-dvh flex-col overflow-y-auto bg-moss-deep px-4 pt-5 pb-8 text-paper md:flex">
       <div className="px-2">
         <Wordmark tone="paper" />
-        <p className="mt-3 text-xs tracking-wide text-paper/60">
+        <p className="mt-3 text-xs text-cream/55 lowercase">
           {practitioner.practiceName}
         </p>
       </div>

@@ -50,9 +50,9 @@ A page file exports metadata, and sometimes `generateStaticParams`, then renders
 
 `cacheComponents` and `partialPrefetching` came with the Next.js 16 scaffold and match the next default. The practice is a static shell plus small client islands. Turning the flag off to avoid learning the suspense rules would make the next upgrade harder. Navigation that reads the pathname is wrapped in `Suspense` for that reason.
 
-## 10. One light theme
+## 10. Stone, black, and cream
 
-Paper background, moss rail, clay as the single warm accent, gold only for small marks on the dark surfaces. No automatic dark mode. The product should feel like one room.
+The visual reference is an editorial marketplace: a stone hero, lowercase navigation, rectangular buttons, and a black footer with a giant wordmark. Titles use a plain grotesque. An italic serif is reserved for asides. No automatic dark mode. The earlier moss-and-serif palette read as a spa, and it fought the product’s plainness.
 
 ## 11. Documentation lives with the code
 

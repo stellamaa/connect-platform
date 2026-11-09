@@ -19,7 +19,7 @@ export function MessageThread({ messages }: { messages: readonly CircleMessage[]
           </p>
           <p
             className={cn(
-              "mt-1 rounded-2xl px-4 py-3 text-sm leading-6",
+              "mt-1 rounded-md px-4 py-3 text-sm leading-6",
               message.authorRole === "practitioner"
                 ? "bg-sage-soft text-moss"
                 : "bg-paper-raised text-ink",

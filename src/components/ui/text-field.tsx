@@ -25,7 +25,7 @@ export function TextField({
         placeholder={placeholder}
         autoComplete={autoComplete}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-2xl border border-line bg-paper px-4 py-3 text-ink outline-none placeholder:text-ink-soft/50 focus:border-sage"
+        className="w-full rounded-md border border-line bg-paper-raised px-4 py-3 text-ink outline-none placeholder:text-ink-soft/50 focus:border-ink"
       />
     </label>
   );
